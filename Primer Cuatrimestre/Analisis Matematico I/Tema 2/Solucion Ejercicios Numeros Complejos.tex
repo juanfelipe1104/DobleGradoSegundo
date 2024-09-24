@@ -1,0 +1,43 @@
+\documentclass[fleqn]{article}
+\usepackage{amsmath}
+\title{Solución Problemas Números Complejos}
+\author{Juan Rodríguez}
+
+\setlength{\parindent}{0pt}
+
+\begin{document}
+	\maketitle
+	\section*{Apuntes}
+	\begin{itemize}
+		\item $i^{2} = -1$
+		\item $i^{3} = i^{2} \cdot i = -i$
+		\item $i^{4} = i^{2} \cdot i^{2} = 1$
+		\item $(a+bi) \cdot (c+di) = (ac-bd+adi+bci)$
+		\item $\frac{a+bi}{c+di} = \frac{a+bi}{c+di} \cdot \frac{c-di}{c-di} = \frac{(a+bi) \cdot (c-di)}{c^{2}+d^{2}}$
+	\end{itemize}
+	\section{Ejercicio 1}
+	Calcular parte real e imaginaria de los siguientes números complejos: \\
+	a) $z_1 = \frac{3-2i}{1+4i} $
+	b) $z_2 = \frac{1}{i} + \frac{1}{1+i}$
+	c) $z_3 = cos(i)$
+	d) $z_4 = sen(2+i)$
+	\subsection{Solución}
+	\[
+	z_1 = \frac{3-2i}{1+4i} = \frac{3-2i}{1+4i} \cdot \frac{1-4i}{1-4i} = \frac{3-8-12i-2i}{17} = \boxed{-\frac{5}{17} - \frac{14}{17}i}
+	\]
+	\[
+	z_2 = \frac{1}{i} + \frac{1}{1+i} = \frac{1+2i}{-1+i} = \frac{1+2i}{-1+i} \cdot \frac{-1-i}{-1-i} = \frac{-1+2-1i-2i}{2} = \boxed{\frac{1}{2} - \frac{3}{2}i}
+	\]
+	\[
+	z_3 = cos(i) = \frac{e^{-1} + e}{2} = \frac{\frac{1}{e}+e}{2} = \boxed{\frac{1}{2e}+\frac{e}{2}}
+	\]
+	\[
+	z_4 = sen(2+i) = \frac{e^{i(2+i)}-e^{-i(2+i)}}{2i} = \frac{e^{-1+2i}-e^{1-2i}}{2i} = -\frac{i}{2} (\frac{1}{e} \cdot (cos(2)+isen(2)) - e \cdot (cos(-2)+isen(-2)))
+	\]
+	\[
+	= -\frac{i}{2} (\frac{1}{e} \cdot (cos(2)+isen(2)) - e \cdot (cos(2)-isen(2))) = \frac{1}{2e} (sen(2)-icos(2)) - \frac{e}{2} (-sen(2)-icos(2))
+	\]
+	\[
+	= \boxed{(\frac{1}{2e}+\frac{e}{2})sen(2) + i(-\frac{1}{2e}+\frac{e}{2})cos(2)}
+	\]
+\end{document}
