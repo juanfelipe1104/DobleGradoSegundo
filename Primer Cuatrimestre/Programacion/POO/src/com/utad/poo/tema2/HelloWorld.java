@@ -6,3 +6,6 @@ public class HelloWorld {
 		System.out.println("Bienvenido al mundo de la programacion");
 	}
 }
+
+// (ojectName instanceof ClassName) para saber si un objeto pertenece a una clase
+// & compara ambos operadores
