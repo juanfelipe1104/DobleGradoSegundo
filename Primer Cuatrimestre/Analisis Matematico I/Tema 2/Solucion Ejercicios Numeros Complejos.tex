@@ -1,5 +1,6 @@
 \documentclass[fleqn]{article}
 \usepackage{amsmath}
+\usepackage{amsfonts}
 \title{Solución Problemas Números Complejos}
 \author{Juan Rodríguez}
 
@@ -14,6 +15,7 @@
 		\item $i^{4} = i^{2} \cdot i^{2} = 1$
 		\item $(a+bi) \cdot (c+di) = (ac-bd+adi+bci)$
 		\item $\frac{a+bi}{c+di} = \frac{a+bi}{c+di} \cdot \frac{c-di}{c-di} = \frac{(a+bi) \cdot (c-di)}{c^{2}+d^{2}}$
+		\item $x = e^{Ln(x)} \leftrightarrow x = Ln(e^{x})$
 	\end{itemize}
 	\section{Ejercicio 1}
 	Calcular parte real e imaginaria de los siguientes números complejos: \\
@@ -39,5 +41,148 @@
 	\]
 	\[
 	= \boxed{(\frac{1}{2e}+\frac{e}{2})sen(2) + i(-\frac{1}{2e}+\frac{e}{2})cos(2)}
+	\]
+	\section{Ejercicio 2}
+	Calcular el modulo y argumento de: \\
+	a) $z_1 = 3^i$
+	b) $z_2 = i^{i}$
+	c) $z_3 = i^{3+i}$
+	d) $z_4 = (1+i)^{2+i}$
+	\subsection{Solución}
+	\[
+	z_1 = 3^{i} = e^{Ln(3^{i})} = e^{i Ln(3)} = \boxed{r=1 , \sigma = Ln (3)}
+	\]
+	\[
+	z_2 = (e^{i\frac{\pi}{2}})^{i} = e^{-\frac{\pi}{2}} = \boxed{r=e^{-\frac{\pi}{2}}, \sigma = 0}
+	\]
+	\[
+	z_3 = i^{3+i} = i^{3} \cdot i^{i} = (-i) \cdot e^{-\frac{\pi}{2}} = e^{-\frac{\pi}{2}} \cdot e^{i\frac{3\pi}{2}} = \boxed{r=e^{-\frac{\pi}{2}}, \sigma = \frac{\pi}{2}}
+	\]
+	\[
+	z_4 = (1+i)^{2+i} = (1+i)^{2} \cdot (1+i)^{i} = (\sqrt{2} \cdot e^{i\frac{\pi}{4}})^{2} \cdot (\sqrt{2} \cdot e^{i\frac{\pi}{4}})^{i} = (2 \cdot e^{i\frac{\pi}{2}}) \cdot ((\sqrt{2})^{i} \cdot e^{-\frac{\pi}{4}})
+	\]
+	\[
+	= 2e^{-\frac{\pi}{4}} \cdot e^{i\frac{\pi}{2}} \cdot e^{iLn(\sqrt{2})} = 2e^{-\frac{\pi}{4}} \cdot e^{i(\frac{\pi}{2} + Ln(\sqrt{2}))} = \boxed{r=2e^{-\frac{\pi}{4}}, \sigma = \frac{\pi}{2} + Ln(\sqrt{2})}
+	\]
+	\section{Ejercicio 3}
+	Calcular las raíces cuartas de la unidad
+	\subsection{Solución}
+	\[
+	z^{4} = 1 \rightarrow z = \sqrt[4]{1} e^{i(\frac{2k\pi}{4})} || k = 0,1,2,3
+	\]
+	\[
+	k = 0 \rightarrow e^{0} = \boxed{1}
+	\]
+	\[
+	k = 1 \rightarrow e^{i\frac{\pi}{2}} = \boxed{i}
+	\]
+	\[
+	k = 2 \rightarrow e^{i\pi} = \boxed{-1}
+	\]
+	\[
+	k = 3 \rightarrow e^{i3\frac{\pi}{2}} = \boxed{-i}
+	\]
+	\section{Ejercicio 4}
+	Calcular las raíces cúbicas de -8
+	\subsection{Solución}
+	\[
+	z^{3} = -8 \rightarrow \sqrt[3]{8} e^{i(\frac{\pi + 2k\pi}{3})} || k = 0,1,2
+	\]
+	\[
+	k = 0 \rightarrow 2e^{i\frac{\pi}{3}} = 2(cos(\frac{\pi}{3}) + isen(\frac{\pi}{3})) = \boxed{1 + i\sqrt{3}} 
+	\]
+	\[
+	k = 1 \rightarrow 2e^{i\pi} = \boxed{-2}
+	\]
+	\[
+	k = 2 \rightarrow 2e^{i\frac{5\pi}{3}} = 2(cos(\frac{5\pi}{3}) + isen(\frac{5\pi}{3})) = \boxed{1 - i\sqrt{3}}
+	\]
+	\section{Ejercicio 5}
+	Determina la forma binómica de $e^{\sqrt{i}}$
+	\subsection{Solución}
+	\[
+	\sqrt{i} = \sqrt{e^{i\frac{\pi}{2}}} = e^{i(\frac{\frac{\pi}{2} + 2k\pi}{2})} || k = 0,1
+	\]
+	\[
+	k = 0 \rightarrow e^{i\frac{\pi}{4}} = cos(\frac{\pi}{4}) + sen(\frac{\pi}{4}) = \frac{\sqrt{2}}{2} + i\frac{\sqrt{2}}{2}
+	\]
+	\[
+	k = 1 \rightarrow e^{i\frac{5\pi}{4}} = cos(\frac{5\pi}{4}) + sen(5\frac{\pi}{4}) = -\frac{\sqrt{2}}{2} - i\frac{\sqrt{2}}{2}
+	\]
+	Opción 1
+	\[
+	e^{\sqrt{i}} = e^{\frac{\sqrt{2}}{2} + i\frac{\sqrt{2}}{2}} = e^{\frac{\sqrt{2}}{2}}(cos(\frac{\sqrt{2}}{2}) + i sen(\frac{\sqrt{2}}{2})) = \boxed{e^{\frac{\sqrt{2}}{2}}cos(\frac{\sqrt{2}}{2}) + ie^{\frac{\sqrt{2}}{2}}sen(\frac{\sqrt{2}}{2})}
+	\]
+	Opción 2
+	\[
+	e^{\sqrt{i}} = e^{\frac{-\sqrt{2}}{2} - i\frac{\sqrt{2}}{2}} = e^{\frac{-\sqrt{2}}{2}}(cos(-\frac{\sqrt{2}}{2}) + i sen(-\frac{\sqrt{2}}{2})) = \boxed{e^{-\frac{\sqrt{2}}{2}}cos(\frac{\sqrt{2}}{2}) - ie^{-\frac{\sqrt{2}}{2}}sen(\frac{\sqrt{2}}{2})}
+	\]
+	\section{Ejercicio 6}
+	Expresa en forma binómica el número $(-\frac{\sqrt{3}}{2} + \frac{i}{2})^{6}$
+	\subsection{Solución}
+	\[
+	(-\frac{\sqrt{3}}{2} + \frac{i}{2})^{6} = (e^{i\frac{5\pi}{6}})^{6} = e^{i5\pi} = e^{i\pi} = \boxed{-1}
+	\]
+	\section{Ejercicio 7}
+	Calcula $\sqrt{-16-30i}$
+	\subsection{Solución}
+	\[
+	\sqrt{-16-30i} = (x+iy) \rightarrow (\sqrt{-16-30i})^{2} = (x+iy)^{2} \rightarrow -16-30i = x^{2} + 2ixy - y^{2} \rightarrow
+	\]
+	\[
+	x^{2} - y^{2} = -16
+	\]
+	\[
+	2xy = -30 \rightarrow x = -\frac{15}{y}
+	\]
+	\[
+	(-\frac{15}{y})^{2} - y^{2} = -16 \rightarrow \frac{225}{y^{2}} - y^{2} = -16 \rightarrow y^{4} +16y^{2} - 225 = 0
+	\]
+	\[
+	\underrightarrow{y^{2} = t}
+	\]
+	\[
+	t^{2} +16t -225 = 0 \rightarrow (t-25)(t+9) = 0 \rightarrow y=\pm5, x=\mp3
+	\]
+	\[
+	\boxed{z_1 = -3 + 5i, z_2 = 3 -5i}
+	\]
+	\section{Ejercicio 8}
+	Determinar $m \in \mathbb{R}$ de modo que $(2e^{i\sqrt{2}})^{m}$ sea un número real negativo
+	\subsection{Solución}
+	\[
+	(2e^{i\sqrt{2}})^{m} = 2^{m} \cdot \underline{e^{im\sqrt{2}}}
+	\]
+	Nota: Nos fijamos en la parte imaginaria ya que $2^{m}$ siempre sera un valor positivo
+	\[
+	2^{m}(cos(m\sqrt{2}) + isen(m\sqrt{2}))
+	\]
+	Nota: Para que el número sea real negativo, el coseno debe ser negativo y el seno nulo. Por lo tanto, $\forall k \in \mathbb{Z} \rightarrow cos((2k+1)\pi) = -1, sen((2k+1)\pi) = 0$
+	\[
+	m\sqrt{2} = (2k+1)\pi \rightarrow \boxed{m = \frac{(2k+1)\pi}{\sqrt{2}} || k \in \mathbb{Z}}
+	\]
+	\section{Ejercicio 9}
+	Determinar los números complejos no nulos tal que su quinta potencia, $z^{5}$, sea igual a su conjugado, es decir, $\overline{z}$
+	\subsection{Solución}
+	\[
+	z = re^{i\sigma}, \overline{z} = z = re^{-i\sigma}
+	\]
+	\[
+	(re^{i\sigma})^{5} = re^{-i\sigma} \rightarrow r^{5}e^{i\sigma5} = re^{-i\sigma}
+	\]
+	\[
+	r^{5} = r \rightarrow r(r^{4} - 1) = 0 \rightarrow r = 0 X, r = -1 X, r = 1 \checkmark
+	\]
+	\[
+	e^{i\sigma5} = e^{-i\sigma} \rightarrow 5\sigma = -\sigma + 2k\pi \rightarrow \sigma = \frac{k\pi}{3}
+	\]
+	\[
+	k = 0 \rightarrow z = 1, \boxed{1^{5} = \overline{1}}
+	\]
+	\[
+	k = 1 \rightarrow z = e^{i\frac{\pi}{3}}, \boxed{e^{i\frac{5\pi}{3}} = e^{-i\frac{\pi}{3}}}
+	\]
+	\[
+	\boxed{\forall k \in \mathbb{N} \rightarrow (e^{i\frac{k\pi}{3}})^{5} = e^{-i\frac{k\pi}{3}}}
 	\]
 \end{document}

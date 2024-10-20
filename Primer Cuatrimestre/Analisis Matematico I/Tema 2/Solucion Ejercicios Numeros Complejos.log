@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.4.21)  24 SEP 2024 13:07
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.4.21)  16 OCT 2024 12:45
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -101,6 +101,14 @@ LaTeX Info: Redefining \Relbar on input line 971.
 LaTeX Info: Redefining \[ on input line 2953.
 LaTeX Info: Redefining \] on input line 2954.
 )
+(C:\Users\juanf\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+)
 (C:\Users\juanf\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdf
 tex.def
 File: l3backend-pdftex.def 2024-01-04 L3 backend support: PDF output (pdfTeX)
@@ -109,22 +117,33 @@ File: l3backend-pdftex.def 2024-01-04 L3 backend support: PDF output (pdfTeX)
 ) (Solucion Ejercicios Numeros Complejos.aux)
 \openout1 = `"Solucion Ejercicios Numeros Complejos.aux"'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 10.
 
-Overfull \hbox (108.67545pt too wide) detected at line 36
+
+(C:\Users\juanf\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 10.
+
+
+(C:\Users\juanf\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+Overfull \hbox (108.67545pt too wide) detected at line 38
  $\OML/cmm/m/it/10 z[] \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 sen\OT1/cmr/m/n/10 (2
  + \OML/cmm/m/it/10 i\OT1/cmr/m/n/10 ) = [] = [] = \OMS/cmsy/m/n/10 ^^@[]\OT1/c
 mr/m/n/10 ([] \OMS/cmsy/m/n/10 ^^A \OT1/cmr/m/n/10 (\OML/cmm/m/it/10 cos\OT1/cm
@@ -135,7 +154,7 @@ OML/cmm/m/it/10 e \OMS/cmsy/m/n/10 ^^A \OT1/cmr/m/n/10 (\OML/cmm/m/it/10 cos\OT
  []
 
 
-Overfull \hbox (57.30496pt too wide) detected at line 39
+Overfull \hbox (57.30496pt too wide) detected at line 41
  $\OT1/cmr/m/n/10 = \OMS/cmsy/m/n/10 ^^@[]\OT1/cmr/m/n/10 ([] \OMS/cmsy/m/n/10 
 ^^A \OT1/cmr/m/n/10 (\OML/cmm/m/it/10 cos\OT1/cmr/m/n/10 (2) + \OML/cmm/m/it/10
  isen\OT1/cmr/m/n/10 (2)) \OMS/cmsy/m/n/10 ^^@ \OML/cmm/m/it/10 e \OMS/cmsy/m/n
@@ -149,38 +168,60 @@ n\OT1/cmr/m/n/10 (2) \OMS/cmsy/m/n/10 ^^@ \OML/cmm/m/it/10 icos\OT1/cmr/m/n/10
 
 [1
 
-{C:/Users/juanf/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
-(Solucion Ejercicios Numeros Complejos.aux)
+{C:/Users/juanf/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}] [2]
+Overfull \hbox (28.52278pt too wide) detected at line 119
+ $\OML/cmm/m/it/10 e[] \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 e[] \OT1/cmr/m/n/10 =
+ \OML/cmm/m/it/10 e[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 cos\OT1/cmr/m/n/10 (\OMS
+/cmsy/m/n/10 ^^@[]\OT1/cmr/m/n/10 ) + \OML/cmm/m/it/10 isen\OT1/cmr/m/n/10 (\OM
+S/cmsy/m/n/10 ^^@[]\OT1/cmr/m/n/10 )) = []$ 
+ []
+
+
+Overfull \hbox (13.07803pt too wide) detected at line 131
+ $[] \OT1/cmr/m/n/10 = (\OML/cmm/m/it/10 x \OT1/cmr/m/n/10 + \OML/cmm/m/it/10 i
+y\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 ! \OT1/cmr/m/n/10 ([])[] = (\OML/cmm/m/it/1
+0 x \OT1/cmr/m/n/10 + \OML/cmm/m/it/10 iy\OT1/cmr/m/n/10 )[] \OMS/cmsy/m/n/10 !
+ ^^@\OT1/cmr/m/n/10 16 \OMS/cmsy/m/n/10 ^^@ \OT1/cmr/m/n/10 30\OML/cmm/m/it/10 
+i \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 x[] \OT1/cmr/m/n/10 + 2\OML/cmm/m/it/10 ix
+y \OMS/cmsy/m/n/10 ^^@ \OML/cmm/m/it/10 y[] \OMS/cmsy/m/n/10 !$ 
+ []
+
+[3] [4] (Solucion Ejercicios Numeros Complejos.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-04>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 1189 strings out of 474486
- 19100 string characters out of 5743755
- 1938542 words of memory out of 5000000
- 23524 multiletter control sequences out of 15000+600000
- 563479 words of font info for 55 fonts, out of 8000000 for 9000
+ 1305 strings out of 474486
+ 20980 string characters out of 5743755
+ 1940542 words of memory out of 5000000
+ 23624 multiletter control sequences out of 15000+600000
+ 565959 words of font info for 67 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 56i,7n,65p,283b,203s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 56i,15n,65p,297b,216s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\juanf\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm
 1000.pk><C:/Users/juanf/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfon
 ts/cm/cmbx12.pfb><C:/Users/juanf/AppData/Local/Programs/MiKTeX/fonts/type1/publ
-ic/amsfonts/cm/cmmi10.pfb><C:/Users/juanf/AppData/Local/Programs/MiKTeX/fonts/t
-ype1/public/amsfonts/cm/cmmi7.pfb><C:/Users/juanf/AppData/Local/Programs/MiKTeX
-/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/juanf/AppData/Local/Program
-s/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/juanf/AppData/Local
-/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/juanf/AppDa
-ta/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Users/juan
-f/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Use
-rs/juanf/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pf
-b><C:/Users/juanf/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/
-cmsy7.pfb>
-Output written on "Solucion Ejercicios Numeros Complejos.pdf" (1 page, 111722 b
-ytes).
+ic/amsfonts/cm/cmex10.pfb><C:/Users/juanf/AppData/Local/Programs/MiKTeX/fonts/t
+ype1/public/amsfonts/cm/cmmi10.pfb><C:/Users/juanf/AppData/Local/Programs/MiKTe
+X/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Users/juanf/AppData/Local/Progra
+ms/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/juanf/AppData/Loca
+l/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/juanf/AppD
+ata/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/ju
+anf/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/
+Users/juanf/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr5.p
+fb><C:/Users/juanf/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm
+/cmr7.pfb><C:/Users/juanf/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsf
+onts/cm/cmsy10.pfb><C:/Users/juanf/AppData/Local/Programs/MiKTeX/fonts/type1/pu
+blic/amsfonts/cm/cmsy5.pfb><C:/Users/juanf/AppData/Local/Programs/MiKTeX/fonts/
+type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/juanf/AppData/Local/Programs/MiKTe
+X/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Users/juanf/AppData/Local/
+Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on "Solucion Ejercicios Numeros Complejos.pdf" (4 pages, 175868 
+bytes).
 PDF statistics:
- 61 PDF objects out of 1000 (max. 8388607)
+ 95 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
