@@ -185,4 +185,48 @@
 	\[
 	\boxed{\forall k \in \mathbb{N} \rightarrow (e^{i\frac{k\pi}{3}})^{5} = e^{-i\frac{k\pi}{3}}}
 	\]
+	\section{Ejercicio 10}
+	Dado el polinomio $P(z) = z^{4} -6z^{3} + 24z^{2} -18z + 63$. Calcula $P(i\sqrt{3})$ y $P(-i\sqrt{3})$. Resuelve a continuación la ecuación $P(z) = 0$
+	\subsection{Solución}
+	\[
+	P(i\sqrt{3}) = (i\sqrt{3})^{4} - 6(i\sqrt{3})^{3} + 24 (i\sqrt{3})^{2} - 18(i\sqrt{3}) + 63 = 9 + 18\sqrt{3}i - 72 - 18\sqrt{3}i + 63 = \boxed{0}
+	\]
+	\[
+	\boxed{P(-i\sqrt{3}) = 0} 
+	\]
+	Nota: Si un número complejo es solución o raíz de un polinomio de coeficientes reales, su conjugado también lo es. \\
+	\[
+	P(z) = (z - i\sqrt{3})(z - (-i\sqrt{3})) \cdot Q(x) = (z^{2} + 3) \cdot Q(x) 
+ 	\]
+ 	\[
+ 	Q(x) = \frac{z^{4} -6z^{3} + 24z^{2} -18z + 63}{z^{2} + 3} = \text{...} = z^{2} - 6z + 21 = \text{...} = (z - (3+2\sqrt{3}i))(z - (3-2\sqrt{3}i))
+ 	\]
+ 	\[
+ 	P(z) = 0 \rightarrow \boxed{P(z) = (z - i\sqrt{3})(z - (-i\sqrt{3}))(z - (3+2\sqrt{3}i))(z - (3-2\sqrt{3}i))}
+ 	\]
+ 	\section{Ejercicio 11}
+ 	Dado el número complejo $z = -\sqrt{2+\sqrt{2}} + i\sqrt{2-\sqrt{2}}$, calcula $z^{2}$ en forma binómica. A continuación, expresa $z^{2}$ en forma exponencial y deduce la forma exponencial de $z$
+ 	\subsection{Solución}
+ 	 \[
+ 	 z^{2} = (-\sqrt{2+\sqrt{2}} + i\sqrt{2-\sqrt{2}})^{2} = 2 + \sqrt{2} - 2 + \sqrt{2} - 2i(\sqrt{2+\sqrt{2}})(\sqrt{2-\sqrt{2}}) = \boxed{2\sqrt{2} - 2i\sqrt{2}}
+ 	 \]
+ 	 \[
+ 	 \begin{cases}
+ 	 	r = \sqrt{(2\sqrt{2})^{2} + (2\sqrt{2})^{2}} = 4 \\
+ 	 	\sigma = arctg(\frac{-2\sqrt{2}}{2\sqrt{2}}) = -\frac{\pi}{4} = \frac{7\pi}{4}
+ 	 \end{cases}
+ 	 \]
+ 	 \[
+ 	 z^{2} = 4e^{\frac{7\pi}{4}}
+ 	 \]
+ 	 \[
+ 	 z = \sqrt{4e^{\frac{7\pi}{4}}} = 2e^{i\frac{\frac{7\pi}{4}+ 2k\pi}{2}} \text{ tal que } k = 0,1
+ 	 \]
+ 	 \[
+ 	 \begin{cases}
+ 	 	k = 0 & 2e^{i\frac{7\pi}{8}} \text{ Correcto, segundo cuadrante} \\
+ 	 	k = 1 & 2e^{i\frac{15\pi}{8}} \text{ Incorrecto, cuarto cuadrante}
+ 	 \end{cases}
+ 	 \]
+ 	 Nota: El número original estaba en el segundo cuadrante. Al elevar al cuadrado y después deshacerlo, podemos introducir soluciones irreales.
 \end{document}
