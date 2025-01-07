@@ -12,7 +12,7 @@ public class Ejercicio7 {
 		System.out.println("Ingrese un tiempo:");
 		tiempo = scanner.nextDouble();
 		scanner.close();
-		System.out.println("La distancia recorrida es: " + calcularDistancia(tiempo));
+		System.out.println("La distancia recorrida es: " + Ejercicio7.calcularDistancia(tiempo));
 	}
 	public static double calcularDistancia(double tiempo) { //Calcular movimiento MRU
 		return Ejercicio7.ESPACIO + (Ejercicio7.VELOCIDAD * tiempo);

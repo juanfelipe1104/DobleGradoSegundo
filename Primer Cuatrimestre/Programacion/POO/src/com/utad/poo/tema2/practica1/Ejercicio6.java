@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Ejercicio6 {
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
-		int numero = 0, factorial = 1, j = 1;
+		Integer numero = 0, factorial = 1, j = 1;
 		System.out.println("Ingrese un numero:");
 		numero = scanner.nextInt();
 		scanner.close();
@@ -21,12 +21,12 @@ public class Ejercicio6 {
 		System.out.println("El factorial es: " + factorial);
 		System.out.println("El factorial es: " + Ejercicio6.factorial(numero));
 	}
-	public static int factorial(int numero) { //Funcion recursiva
+	public static Integer factorial(Integer numero) { //Funcion recursiva
 		if (numero <= 1) {
 			return 1;
 		}
 		else {
-			return numero *= factorial(numero-1);
+			return numero *= Ejercicio6.factorial(numero-1);
 		}
 	}
 }

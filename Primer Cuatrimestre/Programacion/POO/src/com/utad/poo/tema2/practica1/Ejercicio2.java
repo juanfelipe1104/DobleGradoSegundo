@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Ejercicio2 {
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
-		double numero = 0;
+		Double numero = 0d;
 		System.out.println("Ingrese un numero:");
 		numero = scanner.nextDouble(); //Leer el dato ingresado por teclado
 		scanner.close(); //Cerrar el scanner

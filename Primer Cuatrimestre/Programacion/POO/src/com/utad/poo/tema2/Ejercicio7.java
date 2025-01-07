@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Ejercicio7 {
 	public static void main(String args[]) {
 		Scanner scanner = new Scanner(System.in);
-		int numero = 0;
+		Integer numero = 0;
 		System.out.println("Ingrese un numero: ");
 		numero = scanner.nextInt();
 		scanner.close();

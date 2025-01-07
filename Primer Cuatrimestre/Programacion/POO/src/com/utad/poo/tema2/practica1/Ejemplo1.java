@@ -4,9 +4,9 @@ public class Ejemplo1 { //a)
 	public static void main(String[] args) { //b)
 		String shortMsg = "Short Message"; //c)
 		String longMsg = "Looooong Message"; //d)
-		boolean printShort = true; //e)
-		int counter;
-		int j = 0;
+		Boolean printShort = true; //e)
+		Integer j = 0;
+		//int counter; )f)
 		//System.out.println("Valor de counter: " + counter); //f) Da error ya que la variable no esta incializada
 		if (printShort) { //g)
 			System.out.println(shortMsg);
@@ -19,7 +19,7 @@ public class Ejemplo1 { //a)
 			System.out.println("Are we there yet" + i);
 		}
 		while (j <= 7) { //k)
-			System.out.println("I am going to pass this course" + j);
+			System.out.println("I am going to pass this course " + j);
 			j++;
 		}
 	}
