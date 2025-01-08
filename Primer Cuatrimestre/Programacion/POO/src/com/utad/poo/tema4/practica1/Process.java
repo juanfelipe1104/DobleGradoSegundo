@@ -18,7 +18,7 @@ public class Process implements Comparable<Process> {
 		this.pid = ++Process.counter;
 	}
 	public int compareTo(Process process) {
-		return this.priority.compareTo(process.getPriority());
+		return this.priority.compareTo(process.priority);
 	}
 	public Integer getPid() {
 		return this.pid;

@@ -63,18 +63,18 @@ public class Fecha implements Comparable<Fecha>{
 	}
 	public int compareTo(Fecha otraFecha) {
 		int resultado = 0;
-		if (this.anio < otraFecha.getAnio()) {
+		if (this.anio < otraFecha.anio) {
 			resultado = Fecha.FECHA_POSTERIOR;
 		}
-		else if (this.anio.equals(otraFecha.getAnio())) {
-			if (this.mes < otraFecha.getMes()) {
+		else if (this.anio.equals(otraFecha.anio)) {
+			if (this.mes < otraFecha.mes) {
 				resultado = Fecha.FECHA_POSTERIOR;
 			}
-			else if (this.mes.equals(otraFecha.getMes())) {
-				if (this.dia < otraFecha.getDia()) {
+			else if (this.mes.equals(otraFecha.mes)) {
+				if (this.dia < otraFecha.dia) {
 					resultado = Fecha.FECHA_POSTERIOR;
 				}
-				else if (this.dia.equals(otraFecha.getDia())) {
+				else if (this.dia.equals(otraFecha.dia)) {
 					resultado = Fecha.FECHA_IGUAL;
 				}
 				else {

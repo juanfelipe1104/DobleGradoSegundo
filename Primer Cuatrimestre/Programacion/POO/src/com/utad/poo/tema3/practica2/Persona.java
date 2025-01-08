@@ -32,13 +32,13 @@ public class Persona implements Comparable<Persona>{
 		this.dni = dni;
 	}
 	public int compareTo(Persona persona) {
-		return this.edad.compareTo(persona.getEdad());
+		return this.edad.compareTo(persona.edad);
 	}
 	public boolean equals(Object object) {
 		boolean comparacion = false;
 		if (object instanceof Persona) {
 			Persona persona = (Persona)object;
-			comparacion = this.dni.equals(persona.getDni());
+			comparacion = this.dni.equals(persona.dni);
 		}
 		return comparacion;
 	}

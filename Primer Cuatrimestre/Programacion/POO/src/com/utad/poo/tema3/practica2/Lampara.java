@@ -12,7 +12,7 @@ public class Lampara implements Comparable<Lampara>{
 	}
 	public static Integer posicionLampara(List<Lampara> lamparas, Lampara lampara) {
 		Integer posicion = -1;
-		boolean encontrado = false;
+		Boolean encontrado = false;
 		for (int i = 0; (i < lamparas.size()) && !encontrado; i++) {
 			if (lamparas.get(i).equals(lampara)) {
 				posicion = i;
@@ -38,13 +38,13 @@ public class Lampara implements Comparable<Lampara>{
 		this.numeroLampara = numeroLampara;
 	}
 	public int compareTo(Lampara lampara) {
-		return this.numeroLampara.compareTo(lampara.getNumeroLampara());
+		return this.numeroLampara.compareTo(lampara.numeroLampara);
 	}
 	public boolean equals(Object obj) {
 		boolean resultado = false;
 		if (obj instanceof Lampara) {
 			Lampara lampara = (Lampara)obj;
-			resultado = this.numeroLampara.equals(lampara.getNumeroLampara());
+			resultado = this.numeroLampara.equals(lampara.numeroLampara);
 		}
 		return resultado;
 	}

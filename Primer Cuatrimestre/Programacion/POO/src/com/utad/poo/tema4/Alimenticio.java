@@ -26,6 +26,9 @@ public class Alimenticio extends Producto {
 		}
 	}
 	public static void main(String[] args) {
-		
+		Producto alimentoVencido = new Alimenticio("Carne", 2.0);
+		Producto alimentoNoVencido = new Alimenticio("Pollo", 3d, new Fecha(1,2,2025));
+		System.out.println(alimentoNoVencido);
+		System.out.println(alimentoVencido);
 	}
 }

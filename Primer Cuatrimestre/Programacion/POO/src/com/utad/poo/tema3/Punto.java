@@ -33,8 +33,8 @@ public class Punto {
 				+ "]";
 	}
 	public void desplazarPunto(Punto punto) {
-		this.coordenadaX = punto.getCoordenadaX();
-		this.coordenadaY = punto.getCoordenadaY();
+		this.coordenadaX = punto.coordenadaX;
+		this.coordenadaY = punto.coordenadaY;
 		this.desplazado = true;
 	}
 	public static void main(String[] args) {

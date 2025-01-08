@@ -16,7 +16,7 @@ public class CuentaAhorros extends CuentaPersonal {
 		}
 	}
 	public void retirar(Double cantidad, Fecha fechaOperacion) {
-		if(fechaOperacion.equals(fechaVencimiento)) {
+		if(fechaOperacion.equals(this.fechaVencimiento)) {
 			super.retirar(cantidad);
 		}
 		else {

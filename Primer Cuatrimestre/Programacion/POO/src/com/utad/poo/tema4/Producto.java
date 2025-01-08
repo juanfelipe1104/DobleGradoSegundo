@@ -20,6 +20,6 @@ public class Producto {
 		this.precio = precio;
 	}
 	public String toString() {
-		return "Producto [nombre=" + this.nombre + ", codigoBarras=" + ", precio=" + this.precio + "]";
+		return "Producto [nombre=" + this.nombre + ", precio=" + this.precio + "]";
 	}
 }

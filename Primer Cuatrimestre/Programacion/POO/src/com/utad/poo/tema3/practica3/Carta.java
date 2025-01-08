@@ -29,7 +29,7 @@ public class Carta implements Comparable<Carta>{
 		this.posicionEnMazo = posicionEnMazo;
 	}
 	public int compareTo(Carta carta) {
-		return this.posicionEnMazo.compareTo(carta.getPosicionEnMazo());
+		return this.posicionEnMazo.compareTo(carta.posicionEnMazo);
 	}
 	public Integer getNumeroCarta() {
 		return this.numeroCarta;

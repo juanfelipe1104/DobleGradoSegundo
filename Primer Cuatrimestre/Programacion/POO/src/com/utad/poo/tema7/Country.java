@@ -19,7 +19,7 @@ public class Country implements Comparable<Country>{
 		this.poblacionEnMillones = poblacionEnMillones;
 	}
 	public int compareTo(Country otherCountry) {
-		return this.poblacionEnMillones.compareTo(otherCountry.getPoblacionEnMillones());
+		return this.poblacionEnMillones.compareTo(otherCountry.poblacionEnMillones);
 	}
 	public String getNombre() {
 		return this.nombre;

@@ -46,7 +46,7 @@ public class Jugador implements Comparable<Jugador> {
 		}
 	}
 	public int compareTo(Jugador jugador) {
-		return this.ordenEnRonda.compareTo(jugador.getOrdenEnRonda());
+		return this.ordenEnRonda.compareTo(jugador.ordenEnRonda);
 	}
 	public String getNombre() {
 		return this.nombre;
