@@ -1,0 +1,54 @@
+\documentclass[fleqn]{article}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+\author{Juan Rodríguez}
+\title{Formulario Sistemas Operativos Práctico}
+\date{17/11/2024}
+
+\begin{document}
+	\maketitle
+	Todo se expresa en potencias de dos
+	\section{Memoria Cache - Correspondencia Directa}
+	Tamaño del bloque $(2^w)$ $=$ Tamaño de la linea $(2^l)$ $\rightarrow$ $l = w$ \\
+	
+	Número de bloques $(2^s)$ $=$ $\frac{\text{Tamaño Memoria Principal $(2^p)$}}{\text{Tamaño bloque $(2^w)$}}$ \\
+	
+	Se reservan $w$ bits para la palabra \\
+	
+	Número de lineas $(2^r)$ $=$ $\frac{\text{Tamaño Memoria Cache $(2^c)$}}{\text{Tamaño linea $(2^l)$}}$ \\
+	
+	Se reservan $r$ bits para la linea \\
+	
+	Número de etiquetas $(2^{e})$ $=$ $\frac{\text{Número de bloques $(2^s)$}}{\text{Número de lineas $(2^r)$}}$ \\
+	
+	Se reservan $e$ bits para la etiqueta
+	\section{Memoria Cache - Correspondencia Asociativa}
+	Tamaño del bloque $(2^w)$ $=$ Tamaño de la linea $(2^l)$ $\rightarrow$ $l = w$ \\
+	
+	Se reservan $w$ bits para la palabra \\
+	
+	Número de bloques $(2^s)$ $=$ $\frac{\text{Tamaño Memoria Principal $(2^p)$}}{\text{Tamaño bloque $(2^w)$}}$ \\
+	
+	Se reservan $s$ bits para la etiqueta
+	\section{Memoria Cache - Correspondencia Asociativa por Conjuntos}
+	Tamaño del bloque $(2^w)$ $=$ Tamaño de la linea $(2^l)$ $\rightarrow$ $l = w$ \\
+	
+	Número de bloques $(2^s)$ $=$ $\frac{\text{Tamaño Memoria Principal $(2^p)$}}{\text{Tamaño bloque $(2^w)$}}$ \\
+	
+	Se reservan $w$ bits para la palabra \\
+	
+	Tamaño del conjunto $(2^j)$ $=$ Tamaño linea $(2^l)$ $\cdot$ Número de lineas por conjunto $(2^k)$ \\
+	
+	Se reservan $k$ bits para la etiqueta \\
+	
+	Tamaño del conjunto es el mismo tanto en la principal como en la cache $(2^j)$ \\
+	
+	Número de conjuntos Memoria Principal $(2^t)$ $=$ $\frac{\text{Tamaño Memoria Principal $(2^p)$}}{\text{Tamaño conjunto $(2^j)$}}$ \\
+	
+	Se reservan $t$ bits para el conjunto \\
+	
+	Número de conjuntos Memoria Cache $(2^q)$ $=$ $\frac{\text{Tamaño Memoria Cache $(2^c)$}}{\text{Tamaño conjunto $(2^j)$}}$ \\
+	
+	El conjunto se instancia en el conjunto mód $2^q$
+\end{document}

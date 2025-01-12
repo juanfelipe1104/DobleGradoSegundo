@@ -1,0 +1,34 @@
+\documentclass[fleqn]{article}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+\author{Juan Rodríguez}
+\title{Formulario Memoria Virtual Sistemas Operativos Práctico}
+\date{12/01/2025}
+
+\begin{document}
+	\maketitle
+	Todo se expresa en potencias de 2
+	\section{Memoria virtual}
+	Una memoria virtual se compone de número de página + offset \\
+	
+	Una memoria física se compone de número de marco + offset \\
+	
+	Tamaño de la página $(2^{o})$ $=$ Tamaño del marco $(2^{r})$ $\rightarrow$ $o$ $=$ $r$ \\
+	
+	Se reservan $o$ bits para el offset \\
+	
+	Número de páginas $(2^{p})$ $=$ $\frac{\text{Tamaño de la memoria virtual $(2^v)$}}{\text{Tamaño página$(2^{o})$}}$ \\
+	
+	Se reservan $p$ bits para la página \\
+	
+	Número de marcos $(2^{m})$ $=$ $\frac{\text{Tamaño de la memoria física $(2^f)$}}{\text{Tamaño marco $(2^{r})$}}$ \\
+	
+	Se reservan $m$ bits para el marco
+	\section{Algoritmos de reemplazo}
+	FIFO: Si una página que estaba cargada entra, se mantiene la cola igual. Si no está cargada, sale la página que lleva más tiempo (La que primero entró - First In First Out) \\
+	
+	LRU: Si una página que estaba cargada entra, se envía al final de la cola. Si no está cargada, sale la página que lleva más tiempo \\
+	
+	Second Chance: Si una página que estaba cargada entra, se le pone un $*$ (Segunda vida). Si no está cargada, sale la página que lleva más tiempo; pero si la página es una página con $*$, se envía al final la página con $*$ ("Se salva de ser eliminada")
+\end{document}

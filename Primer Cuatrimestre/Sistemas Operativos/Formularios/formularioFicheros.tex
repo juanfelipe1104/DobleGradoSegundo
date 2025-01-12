@@ -1,0 +1,38 @@
+\documentclass[fleqn]{article}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+\author{Juan Rodríguez}
+\title{Formulario Ficheros Sistemas Operativos Práctico}
+\date{12/01/2025}
+
+\begin{document}
+	\maketitle
+	Todo se expresa en potencias de 2
+	\section{Ficheros}
+	El término agrupación es lo mismo que bloque. Estos pueden ser bloques de información o de gestión \\
+	
+	El término números de agrupación también hace referencia a la palabra del bloque, bits necesarios para referenciar un bloque (Todos son sinónimos). En el formulario se tratará como "ID Agrupación" \\
+	
+	Un i-nodo es una estructura que gestiona un fichero y un fichero solo puede ser gestionado por un i-nodo (Relación 1:1). De esto concluimos que el número máximo de ficheros $=$ número de i-nodos. Por lo tanto, también puede concluirse que el número de ficheros $=$ número mínimo de i-nodos (Todo fichero es gestionado por un i-nodo, puede haber menor número de ficheros que de i-nodos ya que pueden haber i-nodos sin usar) \\
+	
+	Adicionalmente, un i-nodo tiene un número de entradas que apuntan a la información. Estas entradas son directas (pd - Puntero directo), pero para aumentar la capacidad gestionable, se añadieron punteros indirectos; apuntan a un bloque de gestión del cual salen entradas directas a la información. Existen tres tipos, puntero indirecto simple (pis), puntero indirecto doble (pid), puntero indirecto triple (pit). El de mayor grado tiene mayor número de entradas (se vera reflejado en la fórmula para calcular el tamaño máximo de un fichero) \\
+	 
+	Número de entradas de un bloque de gestión $=$ $\frac{\text{Tamaño Agrupación}}{\text{Tamaño ID Agrupación}}$ \\
+	
+	Tamaño máximo de un fichero = Tamaño Agrupación $\cdot$ (nº pd $+$ nº pis $\cdot$ nº entradas $+$ nº pid $\cdot$ (nº entradas)$^{2}$ $+$ nº pit $\cdot$ (nº entradas)$^{3}$) \\
+	
+	Nota: En la práctica se desprecian las entradas directas y punteros indirectos de menor grado. Ej: Si tenemos 10 entradas directas, 3 pis y 2 pid, la formula queda 2 pid $\cdot$ (nº de entradas)$^{2}$ $\cdot$ Tamaño Agrupación \\
+	
+	El bitmap es una estructura de bits que indica si está o no activo lo que le corresponda. Ej: el bitmap de bloques indica si está o no activo un bloque. El bitmap de i-nodos indica si está o no activo el i-nodo. \\
+	
+	Número de agrupaciones $(2^{k})$ $=$ $\frac{\text{Tamaño del disco}}{\text{Tamaño del bloque}}$ \\
+	
+	Se reservan $2^{k}$ \textbf{bits} para el bitmap de bloques (Si queremos conocer el tamaño del bitmap de bloques, hay que pasarlo a bytes) \\
+	
+	Número de i-nodos $=$ número máximo de ficheros $=$ $2^{n}$ \\
+	
+	Se reservan $2^{n}$ \textbf{bits} para el bitmap de i-nodos (Si queremos conocer el tamaño del bitmap de i-nodos, hay que pasarlo a bytes) \\
+	
+	Lista de i-nodos = número de i-nodos $\cdot$ tamaño del i-nodo
+\end{document}
