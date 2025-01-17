@@ -1,0 +1,365 @@
+
+=== LÍMITES ===
+
+
+*** Mathematica/WolframAlpha ***
+
+> Limit[Sin[x]/x, x -> 0]
+
+> Limit[x^2 + Cos[x], x -> Pi]
+
+> Limit[(1 + 1/x)^x, x -> Infinity]
+
+> Limit[Abs[x]/x, x -> 0]
+
+> Limit[Abs[x]/x, x -> 0, Direction -> 1]
+
+> Limit[Abs[x]/x, x -> 0, Direction -> -1]
+
+
+*** GeoGebra *** 
+
+> Limit(sin(x)/x, 0)
+	
+> Limit(x^2 + cos(x), pi)
+	
+> Limit((1 + 1/x)^x, infinity)
+	
+> Limit(abs(x)/x, 0)
+	
+> LimitBelow(abs(x)/x,0)
+	
+> LimitAbove(abs(x)/x,0)
+
+
+*** Maxima ***
+
+> limit(sin(x)/x,x,0);	
+	
+> limit(x^2 + cos(x),x,%pi);
+o
+> limit(x^2 + cos(x),x,%pi),numer;
+
+> limit((1+1/x)^x,x,infinity);
+
+> limit(abs(x)/x,x,0);
+
+> limit(abs(x)/x,x,0,minus);
+
+> limit(abs(x)/x,x,0,plus);
+
+
+*** SageMath ***
+
+> limit(sin(x)/x,x=0)
+
+> limit(x^2 + cos(x),x=pi)
+o
+> limit(x^2 + cos(x),x=pi).n()
+
+> limit((1+1/x)^(x),x=infinity)
+
+> limit(abs(x)/x,x=0)
+
+> limit(abs(x)/x,x=0,dir='minus')
+
+> limit(abs(x)/x,x=0,dir='plus')
+
+
+*** Python ***
+
+import numpy as np
+import sympy as sp
+
+x, expresion = sp.symbols('x expresion')
+
+expresion = sp.sin(x)/x
+print("f(x)=",expresion)
+sp.pprint(expresion)
+limite = sp.limit(expresion,x,0)
+print("El límite cuando f(x) tiende a 0 es",limite)
+
+expresion = x**2 + sp.cos(x)
+print("f(x)=",expresion)
+sp.pprint(expresion)
+limite = sp.limit(expresion,x,sp.pi)
+print("El límite cuando f(x) tiende a pi es",limite)
+print("El límite cuando f(x) tiende a pi es",limite.n())
+
+expresion = (1+1/x)**x
+print("f(x)=",expresion)
+sp.pprint(expresion)
+limite = sp.limit(expresion,x,sp.oo)
+print("El límite cuando f(x) tiende a infinito es",limite)
+print("El límite cuando f(x) tiende a infinito es",limite.n())
+
+expresion = abs(x)/x
+print("f(x)=",expresion)
+sp.pprint(expresion)
+limite = sp.limit(expresion,x,0)
+print("El límite cuando f(x) tiende a cero es",limite)
+
+limite_minus = sp.limit(expresion,x,0,'-')
+print("El límite cuando x tiende a 0 por la izquierda es",limite_minus)
+
+limite_plus = sp.limit(expresion,x,0,'+')
+print("El límite cuando x tiende a 0 por la derecha es",limite_plus)
+
+
+
+
+=== DERIVACIÓN ===
+
+
+*** Mathematica/WolframAlpha ***
+
+> D[-3x+x^2Cos[x],x]
+
+> ReplaceAll[D[-3x+x^2Cos[x],x],{x->Pi}]
+
+> D[-3 x + x^2Cos[x],{x,2}]
+
+> ReplaceAll[D[-3x+x^2Cos[x],{x,2}],{x->Pi}]
+
+> Plot[-x^3+6x+2]
+
+Plot[-x^3+6x+2,{x,-5,5}]
+
+> Minimize[-x^3+6x+2,{x}]
+
+> Maximize[-x^3+6x+2,{x}]
+
+> InflectionPoint[-x^3+6x+2]
+
+> Asymptote[1/x]
+
+
+*** GeoGebra *** 
+
+> Derivative(x^2*cos(x)-3x,1)
+	
+> Iteration(Derivative(x^2*cos(x)-3x),pi,1)
+	
+> Derivative(-3 x + x^2Cos[x],x,2)
+
+> Iteration(Derivative(x^2*cos(x)-3x,2),pi,1)
+	
+También se pueden obtener las derivadas anteriores mediante esta cadena de comandos:
+
+> f(x)=x^2*cos(x)-3x	
+> f'
+> f'(pi)
+> f''
+> f''(pi)
+
+> f(x)=-x^3+6x+2	
+
+> If(-5<=x<=5,-x^3+6x+2)	
+	
+> Extremum(-x^3 + 6x + 2)
+	
+> InflectionPoint(-x^3+6x+2)
+	
+> Asymptote(1/x)
+	
+
+*** Maxima ***
+
+> diff(-3*x+(x^2)*cos(x),x,1);
+
+> at(diff(-3*x+(x^2)*cos(x),x,1),[x=%pi]);
+o
+> at(diff(-3*x+(x^2)*cos(x),x,1),[x=%pi]),numer;
+
+> diff(-3*x+(x^2)*cos(x),x,2);
+
+> at(diff(-3*x+(x^2)*cos(x),x,2),[x=%pi]);
+o
+at(diff(-3*x+(x^2)*cos(x),x,2),[x=%pi]),numer;
+
+> draw2d(explicit(-x^3+6*x+2,x,-1e+06,1e+06));
+
+> draw2d(explicit(-x^3+6*x+2,x,-5,5));
+
+
+*** SageMath ***
+
+> diff(-3*x+(x^2)*cos(x),x)
+	
+> numerical_approx(diff(-3*x+(x^2)*cos(x),x)(x=pi))
+
+> diff(-3*x+(x^2)*cos(x),x,2)
+	
+> numerical_approx(diff(-3*x+(x^2)*cos(x),x,2)(x=pi))
+	
+> plot(-x^3+6*x+2,(x,-5,5))
+
+> find_local_minimum(-x^3+6*x+2,-5,5)
+
+> find_local_maximum(-x^3+6*x+2,-5,5)
+
+
+*** Python ***
+
+import numpy as np
+import sympy as sp
+import matplotlib.pyplot as plt
+
+x, expresion = sp.symbols('x expresion')
+
+expresion = -3*x+(x**2)*sp.cos(x)
+print("f(x)=",expresion)
+sp.pprint(expresion)
+deriv = sp.diff(expresion,x,1)
+print("f'(x)=",deriv)
+
+print("f'(pi)=",(deriv.subs(x,sp.pi)).evalf(3))
+
+deriv=sp.diff(expresion,x,2)
+print("f''(x)=",deriv)
+
+print("f''(pi)=",(deriv.subs(x,sp.pi)).evalf(3))
+
+t = np.linspace(-5,5,1000)
+expresion = -x**3+6*x+2                 
+f = sp.lambdify(x, expresion, "numpy")  
+plt.plot(t,f(t),label="f(t)")    
+
+
+=== INTERPOLACIÓN DE FUNCIONES ===
+
+*** Mathematica/WolframAlpha ***
+
+> Series[Cos[x],{x,0,2}]
+
+> Series[Cos[x], {x, Pi/2, 4}]
+	
+> InterpolatingPolynomial[{{-1,3},{2,1},{3,2}},x]
+
+
+*** GeoGebra *** 
+
+> TaylorPolynomial(cos(x), 0, 2)
+	
+> TaylorPolynomial(cos(x), pi/2, 4)
+	
+> Polynomial({(-1,3),(2,1),(3,2)})
+	
+
+*** Maxima ***
+
+> taylor(cos(x),x,0,2);
+	
+> taylor(cos(x),x,%pi/2,4);
+
+> load(interpol)$		
+> expand(lagrange([[-1,3],[2,1],[3,2]]));
+		
+
+*** SageMath ***
+
+> (cos(x)).taylor(x,0,2)
+	
+> (cos(x)).taylor(x,pi/2,4)
+
+> R = PolynomialRing(RR,'x')
+> R.lagrange_polynomial([(-1,3),(2,1),(3,2)])
+	
+
+*** Python ***
+
+import numpy as np
+import sympy as sp
+from scipy.interpolate import lagrange
+
+x, expresion = sp.symbols('x expresion')
+
+expresion=sp.cos(x)
+taylor = expresion.series(x, 0, 2)
+print(taylor)
+
+taylor = expresion.series(x, 0, 3)
+print(taylor)
+
+taylor = expresion.series(x, sp.pi/2, 5)
+print(taylor)
+
+x = np.array([-1, 2, 3])
+y = np.array([3, 1, 2])
+poly = lagrange(x, y)
+print(poly)
+
+
+=== INTEGRACIÓN ===
+
+*** Mathematica/WolframAlpha ***
+
+> Integrate[xE^(2x),x]
+
+> Integrate[Sin[2x-1],{x,0,3(Pi/2)}]
+	
+> Integrate[Abs[Sin[2x-1]],{x,0,3(Pi/2)}]	
+
+> Integrate[Abs[x^2-Sqrt[x]],{x,0,2}]
+
+> ArcLengthIntegral[x^3-1,{x,-2,1}]
+	
+
+*** GeoGebra *** 
+
+> Integral(x*e^(2x))
+	
+> Integral(x*e^(2x),0,3*(Pi/2))
+	
+> Integral(|sin(2x-1)|,0,3(Pi/2))	
+	
+> Integral(|x^2-sqrt(x)|,0,2)
+
+> Length(x^3-1,-2,1)
+	
+
+*** Maxima ***
+
+> integrate (x*%e**(2*x), x);
+	
+> integrate (x*%e**(2*x), x, 0,3*(%pi/2));	
+
+
+*** SageMath ***
+
+> from sage.symbolic.integration.integral import definite_integral
+
+> integral(x*e^(2*x),x)
+	
+> integral(sin(2*x-1),x,0,3*pi/2)
+	
+> integral(abs(sin(2*x-1)),x,0,3*pi/2)	
+
+> integral(abs(x^2-sqrt(x)),x,0,2)
+
+> show((integral(sqrt(1+(derivative(x^3-1,x))^2),x,-2,1)).n())	
+	
+
+*** Python ***
+
+import numpy as np
+import sympy as sp
+
+x, expresion = sp.symbols('x expresion')
+
+# Integral indefinida
+
+integral = sp.symbols('integral')
+expresion = x*sp.exp(2*x)
+integral = sp.integrate(expresion, x)
+print ("La integral indefinida de")
+sp.pprint(expresion)
+print ("es")
+sp.pprint(integral)
+
+# Integral definida
+
+expresion = sp.sin(2*x-1)
+sp.pprint(expresion)
+print ("La integral entre 0 y 3*(sp.pi/2) ", (sp.integrate(expresion,(x,0,3*(sp.pi/2)))).n())
+
