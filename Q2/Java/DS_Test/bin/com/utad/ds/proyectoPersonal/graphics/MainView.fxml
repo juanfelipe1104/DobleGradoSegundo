@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.utad.ds.proyectoPersonal.graphics.MainController">
+    <top>
+        <VBox spacing="10">
+            <padding>
+                <Insets top="10" right="10" bottom="10" left="10"/>
+            </padding>
+            <Label text="Planificador de Viaje"/>
+            <HBox spacing="10">
+                <Label text="Destino:"/>
+                <TextField fx:id="textFieldDestiny"/>
+                <Label text="Salida:"/>
+                <DatePicker fx:id="datePickerDeparture"/>
+                <Label text="Regreso:"/>
+                <DatePicker fx:id="datePickerReturn"/>
+            </HBox>
+            <HBox spacing="10">
+                <Label text="Tipo:"/>
+                <ComboBox fx:id="comboBoxType"/>
+                <Label text="Extras:"/>
+                <CheckBox text="Seguro" fx:id="checkInsurance"/>
+                <CheckBox text="Guía" fx:id="checkGuide"/>
+                <CheckBox text="Transporte Privado" fx:id="checkTransport"/>
+            </HBox>
+            <Button text="Generar Itinerario" onAction="#onGenerar"/>
+        </VBox>
+    </top>
+
+    <center>
+        <VBox spacing="10">
+            <padding>
+                <Insets top="10" right="10" bottom="10" left="10"/>
+            </padding>
+            <Label text="Resumen del Itinerario"/>
+            <TextArea fx:id="textAreaResult" editable="false"/>
+
+            <Separator/>
+
+            <HBox spacing="10">
+                <Label text="Estado de Reserva:"/>
+                <Label fx:id="labelEstado"/>
+                <Button text="Avanzar Estado" onAction="#onAvanzarEstado"/>
+            </HBox>
+
+            <Label text="Notificaciones:"/>
+            <ListView fx:id="listViewNotificaciones"/>
+        </VBox>
+    </center>
+</BorderPane>
