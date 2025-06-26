@@ -86,12 +86,7 @@ int ListaEnlazada::buscar(int elementoABuscar){
 }
 
 ListaEnlazada::~ListaEnlazada(){
-    Nodo *current = this->lista;
-    while(current != nullptr){
-        Nodo *auxiliar = current;
-        current = current->siguienteNodo;
-        delete auxiliar;
+    while(this->lista != nullptr){
+        this->eliminar(0);
     }
-    this->lista = nullptr;
-    this->n = 0;
 }
